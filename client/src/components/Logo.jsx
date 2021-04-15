@@ -9,20 +9,20 @@ const LogoContainer = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 10em;
-  height: 10em;
+  width: 200px;
+  height: 200px;
   ${({ inline }) =>
     inline &&
     css`
-      width: 24px;
-      height: 24px;
-      margin-right: 6px;
+      width: 50px;
+      height: 50px;
+      margin-right: 5px;
     `};
   ${({ small }) =>
     small &&
     css`
-      width: 4.8em;
-      height: 4.8em;
+      width: 50px;
+      height: 50px;
     `};
 `;
 

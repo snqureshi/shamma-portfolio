@@ -1,8 +1,11 @@
 import React from "react";
 import Typed from "react-typed";
 import styled from "styled-components";
-import Logo from "../../components/Logo";
 import { Element, scroller } from "react-scroll";
+import Logo from "../../components/Logo";
+import { Marginer } from "../../components/Marginer";
+import { DownArrow } from "../../components/DownArrow";
+import { Navbar } from "../../components/Nav";
 
 const LandingContainer = styled.div`
   width: 100%;
@@ -14,26 +17,57 @@ const LandingContainer = styled.div`
   align-items: center;
 `;
 
+const IntroText = styled.div`
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #f2e9e4;
+  margin: 0;
+  text-align: center;
+`;
+
+const TypedText = styled.div`
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #c9ada7;
+  margin: 0;
+  text-align: center;
+`;
+
 function Landing(props) {
+  const scrollToNextSection = () => {
+    scroller.scrollTo("About", { smooth: true, duration: 1500 });
+  };
+
   return (
     <LandingContainer>
+      <Navbar />
+      <Marginer direction="vertical" margin="20px" />
       <Logo />
-      Hi! I'm Shamma Noor Qureshi
-      <Typed
-        className="typed-text"
-        strings={[
-          "Full-Stack Software Engineer",
-          "Front-End Developer",
-          "Back-End Developer",
-          "Educator",
-          "Cat Mom",
-          "Indoor-Plant enthusiast",
-          "BTS Army",
-        ]}
-        typeSpeed={30}
-        backSpeed={45}
-        loop={true}
-      />
+      <Marginer direction="vertical" margin="20px" />
+      <IntroText>Hi, I'm Shamma Noor Qureshi</IntroText>
+      <TypedText>
+        <Typed
+          className="typed-text"
+          strings={[
+            "Full-Stack Software Engineer",
+            "Front-End Developer",
+            "Back-End Developer",
+            "Educator",
+            "Cat Mom",
+            "Indoor-Plant enthusiast",
+            "BTS Army",
+            "Foodie",
+          ]}
+          typeSpeed={30}
+          backSpeed={45}
+          loop={true}
+        />
+      </TypedText>
+      <Marginer direction="vertical" margin="2em" />
+      <Marginer direction="vertical" margin="10em" />
+      <DownArrow />
     </LandingContainer>
   );
 }
