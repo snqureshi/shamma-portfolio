@@ -1,7 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
 import styled from "styled-components";
-import { Marginer } from "../../components/Marginer";
 import { ProjectCard } from "../../components/ProjectCard";
 
 import Project1Img from "../../assets/whats-for-dinner home.png";
@@ -18,13 +17,15 @@ const ProjectsContainer = styled(Element)`
   background-color: #c9ada7;
 `;
 
-const ProjectsHeader = styled.h3`
+const ProjectsHeader = styled.h1`
   text-align: center;
   font-size: 40px;
+  color: #161627;
 `;
 
 const CardsContainer = styled(Element)`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background-color: #c9ada7;

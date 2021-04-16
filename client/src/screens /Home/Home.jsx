@@ -5,6 +5,7 @@ import { AboutSection } from "./About";
 import { ProjectsSection } from "./Projects";
 import { ContactSection } from "./Contact";
 import { Navbar } from "../../components/Nav";
+import Footer from "../../components/Footer";
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -21,6 +22,7 @@ function Home(props) {
       <AboutSection />
       <ProjectsSection />
       <ContactSection />
+      <Footer />
     </HomeContainer>
   );
 }
