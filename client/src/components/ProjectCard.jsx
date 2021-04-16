@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 import { Marginer } from "../components/Marginer";
-import { Button } from "../components/Button";
 
 const CardContainer = styled.div`
   width: 350px;
@@ -18,7 +17,9 @@ const CardContainer = styled.div`
   justify-content: space-between;
 `;
 
-const ProjectTitle = styled.h4`
+const ProjectTitle = styled.h3`
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
   font-size: 18px;
   color: #22223b;
   font-weight: normal;
@@ -34,6 +35,7 @@ const ProjectImg = styled.img`
 const ProjectDescription = styled.span`
   font-size: 15px;
   color: #22223b;
+  font-family: "Dosis", sans-serif;
 `;
 
 const ButtonContainer = styled.div``;

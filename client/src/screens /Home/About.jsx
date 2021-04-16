@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const AboutContainer = styled(Element)`
   width: 100%;
-  min-height: 1100px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,17 +22,19 @@ const AboutImg = styled.img`
 `;
 
 const AboutTitle = styled.h2`
-  color: #000;
+  font-family: "Playfair Display", serif;
+  color: #161627;
   font-size: 30px;
-  font-weight: 700;
   margin: 5px 0;
+  padding: 10px 0 0 0;
   @media screen and (max-width: 480px) {
     margin-top: 1.5em;
   }
 `;
 
 const AboutDetails = styled.p`
-  color: #7a7a7a;
+  font-family: "Montserrat", sans-serif;
+  color: #747177;
   font-size: 22px;
   text-align: center;
   max-width: 60%;
@@ -69,15 +71,20 @@ export function AboutSection(props) {
           I'm a Full-Stack Developer with a background in Biology and Education.
           Before diving into the world of code, I was spending my time nurturing
           relationships with patients and thier families, ensuring their
-          problems are heard and solved. I am seeking to bring the same
-          compassionate and collaboration driven mindset to solving problems in
-          software developement teams. I am a fast-learner and a team player who
-          is motivated by the desire to improve the lives of others & loves to
-          take on new challenges. After 12 rigorous weeks and 420+ hours of
-          instruction and work, I completed 5 major projects and graduated from
-          the General Assembly Software Engineering Immersive. I am seeking an
-          engineering role where problem-solving, collaboration, and growth are
-          encouraged and where I'll continue to learn and foster new skills.
+          problems are heard and solved.
+        </AboutDetails>
+        <AboutDetails>
+          I am seeking to bring the same compassionate and collaboration driven
+          mindset to solving problems in software developement teams. I am a
+          fast-learner and a team player who is motivated by the desire to
+          improve the lives of others & loves to take on new challenges.
+        </AboutDetails>
+        <AboutDetails>
+          After 12 rigorous weeks and 420+ hours of instruction and work, I
+          completed 5 major projects and graduated from the General Assembly
+          Software Engineering Immersive. I am seeking an engineering role where
+          problem-solving, collaboration, and growth are encouraged and where
+          I'll continue to learn and foster new skills.
         </AboutDetails>
         <SkillsContainer>
           <SkillsImg src="https://seeklogo.com/images/H/html5-logo-EF92D240D7-seeklogo.com.png" />

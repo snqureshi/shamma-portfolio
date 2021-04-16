@@ -20,6 +20,7 @@ const StyledFormWrapper = styled.div`
 `;
 
 const StyledForm = styled.form`
+  font-family: "Dosis", sans-serif;
   width: 100%;
   max-width: 700px;
   padding: 40px;
@@ -30,6 +31,7 @@ const StyledForm = styled.form`
 `;
 
 const StyledHeading = styled.div`
+  font-family: "Playfair Display", serif;
   font-size: 24px;
   color: #4a4e69;
 `;
@@ -56,11 +58,12 @@ const StyledButton = styled.button`
   display: block;
   background-color: #22223b;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 16px;
   border: 0;
   border-radius: 5px;
   height: 40px;
   padding: 0 20px;
+  font-family: "Playfair Display", serif;
   cursor: pointer;
   box-sizing: border-box;
 `;

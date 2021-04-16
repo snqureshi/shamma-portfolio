@@ -17,6 +17,7 @@ const LandingContainer = styled.div`
 `;
 
 const IntroText = styled.div`
+  font-family: "Playfair Display", serif;
   font-size: 80px;
   font-weight: 500;
   line-height: 1.5;
@@ -26,6 +27,7 @@ const IntroText = styled.div`
 `;
 
 const TypedText = styled.div`
+  font-family: "Montserrat", sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 1.5;
@@ -34,9 +36,16 @@ const TypedText = styled.div`
   text-align: center;
 `;
 
+const DownArrowContainer = styled.div`
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+`;
+
 function Landing(props) {
   const scrollToNextSection = () => {
-    scroller.scrollTo("#about", { smooth: true, duration: 1500 });
+    scroller.scrollTo("AboutSection", { smooth: true, duration: 1500 });
   };
 
   return (
@@ -53,20 +62,22 @@ function Landing(props) {
               "Full-Stack Software Engineer",
               "Front-End Developer",
               "Back-End Developer",
+              "React Developer",
               "Educator",
               "Cat Mom",
               "Indoor-Plant enthusiast",
               "BTS Army",
               "Foodie",
             ]}
-            typeSpeed={30}
-            backSpeed={45}
+            typeSpeed={45}
+            backSpeed={60}
             loop={true}
           />
         </TypedText>
-        <Marginer direction="vertical" margin="2em" />
         <Marginer direction="vertical" margin="10em" />
-        <DownArrow />
+        <DownArrowContainer onClick={scrollToNextSection}>
+          <DownArrow />
+        </DownArrowContainer>
       </LandingContainer>
     </div>
   );

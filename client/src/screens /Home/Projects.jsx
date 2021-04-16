@@ -19,6 +19,7 @@ const ProjectsContainer = styled(Element)`
 `;
 
 const ProjectsHeader = styled.h1`
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-size: 40px;
   color: #161627;
@@ -55,7 +56,7 @@ export function ProjectsSection(props) {
           <ProjectCard
             projectImg={Project3Img}
             projectTitle="Pets-R-Us"
-            projectDescription=" Pets-R-Us was a team project where we built a full (Mongo/Express/React/Node) MERN stack application that allows local animal adoption agencies to post their adorable animals. The application has full CRUD and user association on the back, and utilizes the React framework on the front end."
+            projectDescription=" Pets-R-Us was a team project where we built a full MERN stack application that allows local animal adoption agencies to post their adorable animals. The application has full CRUD and user association on the back, and utilizes the React framework on the front end."
             webLink="https://pets-r-us.netlify.app/"
             gitLink="https://github.com/jessicamyee/pets-r-us"
           />
