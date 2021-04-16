@@ -1,5 +1,4 @@
 import React from "react";
-import { Element } from "react-scroll";
 import styled from "styled-components";
 
 const AboutContainer = styled(Element)`
