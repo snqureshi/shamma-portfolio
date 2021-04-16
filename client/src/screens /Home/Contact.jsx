@@ -101,7 +101,7 @@ export function ContactSection() {
   };
 
   return (
-    <>
+    <div id="contact" className="contact-container">
       <StyledFormWrapper>
         <StyledForm onSubmit={handleSubmit}>
           <StyledHeading>
@@ -140,6 +140,6 @@ export function ContactSection() {
           <StyledButton type="submit">Send Message</StyledButton>
         </StyledForm>
       </StyledFormWrapper>
-    </>
+    </div>
   );
 }

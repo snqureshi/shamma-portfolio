@@ -4,6 +4,7 @@ import Landing from "./Landing";
 import { AboutSection } from "./About";
 import { ProjectsSection } from "./Projects";
 import { ContactSection } from "./Contact";
+import { Navbar } from "../../components/Nav";
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -15,6 +16,7 @@ const HomeContainer = styled.div`
 function Home(props) {
   return (
     <HomeContainer>
+      <Navbar />
       <Landing />
       <AboutSection />
       <ProjectsSection />

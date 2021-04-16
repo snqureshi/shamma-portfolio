@@ -5,7 +5,6 @@ import { Element, scroller } from "react-scroll";
 import Logo from "../../components/Logo";
 import { Marginer } from "../../components/Marginer";
 import { DownArrow } from "../../components/DownArrow";
-import { Navbar } from "../../components/Nav";
 
 const LandingContainer = styled.div`
   width: 100%;
@@ -42,7 +41,6 @@ function Landing(props) {
 
   return (
     <LandingContainer>
-      <Navbar />
       <Marginer direction="vertical" margin="20px" />
       <Logo />
       <Marginer direction="vertical" margin="20px" />
