@@ -106,7 +106,11 @@ export function ContactSection() {
   return (
     <div id="contact" className="contact-container">
       <StyledFormWrapper>
-        <StyledForm onSubmit={handleSubmit}>
+        <StyledForm
+          onSubmit={handleSubmit}
+          action="https://getform.io/f/ad93345a-af4f-4683-9b66-329481aa012b"
+          method="POST"
+        >
           <StyledHeading>
             <h3>
               Email Me ||

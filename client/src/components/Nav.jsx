@@ -25,19 +25,6 @@ const AccessibilityContainer = styled.div`
   flex-direction: row;
 `;
 
-const StyledLink = styled.link`
-  background-color: transparent;
-  border: none;
-  height: 100%;
-  font-weight: 500;
-  font-size: 1rem;
-  &:hover {
-    transition: 0.2s ease-in-out;
-    background-color: transparent;
-    color: #9a8c98;
-  }
-`;
-
 export function Navbar(props) {
   return (
     <NavbarContainer>
