@@ -42,7 +42,7 @@ export function Navbar(props) {
   return (
     <NavbarContainer>
       <BrandContainer>
-        <Link to="/">
+        <Link to="/#landing">
           <Logo inline />
         </Link>
       </BrandContainer>

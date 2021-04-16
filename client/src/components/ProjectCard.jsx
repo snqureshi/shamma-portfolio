@@ -11,11 +11,11 @@ const CardContainer = styled.div`
   box-shadow: 0px 0px 7px rgba(13, 0, 19, 0.2);
   border-radius: 3px;
   margin: 5px 10px;
-  position: relative;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 `;
 
 const ProjectTitle = styled.h4`
@@ -38,6 +38,24 @@ const ProjectDescription = styled.span`
 
 const ButtonContainer = styled.div``;
 
+const ProjectButton = styled.button`
+  padding: ${({ small }) => (small ? "5px 10px" : "8px 15px")};
+  margin: ${({ small }) => (small ? "20px 10px" : "10px 15px")};
+  border-radius: 10px;
+  background-color: #4a4e69;
+  color: #fff;
+  font-weight: bold;
+  font-size: ${({ small }) => (small ? "14px" : "18px")};
+  outline: none;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: transparent;
+    border: 2px solid #9a8c98;
+  }
+`;
+
 export function ProjectCard(props) {
   const {
     projectTitle,
@@ -55,9 +73,16 @@ export function ProjectCard(props) {
       <ProjectDescription>{projectDescription}</ProjectDescription>
       <Marginer direction="horizontal" margin="1em" />
       <ButtonContainer>
-        <Button small>{webLink}</Button>
-        <Marginer direction="vertical" margin="5px" />
-        <Button small>{gitLink}</Button>
+        <ProjectButton small>
+          <a href={webLink} target="_blank" rel="noreferrer">
+            See The Site
+          </a>
+        </ProjectButton>
+        <ProjectButton small>
+          <a href={gitLink} target="_blank" rel="noreferrer">
+            See The Code
+          </a>
+        </ProjectButton>
       </ButtonContainer>
     </CardContainer>
   );

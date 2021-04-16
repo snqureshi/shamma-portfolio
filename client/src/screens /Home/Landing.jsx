@@ -36,37 +36,39 @@ const TypedText = styled.div`
 
 function Landing(props) {
   const scrollToNextSection = () => {
-    scroller.scrollTo("About", { smooth: true, duration: 1500 });
+    scroller.scrollTo("#about", { smooth: true, duration: 1500 });
   };
 
   return (
-    <LandingContainer>
-      <Marginer direction="vertical" margin="20px" />
-      <Logo />
-      <Marginer direction="vertical" margin="20px" />
-      <IntroText>Hi, I'm Shamma Noor Qureshi</IntroText>
-      <TypedText>
-        <Typed
-          className="typed-text"
-          strings={[
-            "Full-Stack Software Engineer",
-            "Front-End Developer",
-            "Back-End Developer",
-            "Educator",
-            "Cat Mom",
-            "Indoor-Plant enthusiast",
-            "BTS Army",
-            "Foodie",
-          ]}
-          typeSpeed={30}
-          backSpeed={45}
-          loop={true}
-        />
-      </TypedText>
-      <Marginer direction="vertical" margin="2em" />
-      <Marginer direction="vertical" margin="10em" />
-      <DownArrow />
-    </LandingContainer>
+    <div id="landing" className="projects-container">
+      <LandingContainer>
+        <Marginer direction="vertical" margin="20px" />
+        <Logo />
+        <Marginer direction="vertical" margin="20px" />
+        <IntroText>Hi, I'm Shamma Noor Qureshi</IntroText>
+        <TypedText>
+          <Typed
+            className="typed-text"
+            strings={[
+              "Full-Stack Software Engineer",
+              "Front-End Developer",
+              "Back-End Developer",
+              "Educator",
+              "Cat Mom",
+              "Indoor-Plant enthusiast",
+              "BTS Army",
+              "Foodie",
+            ]}
+            typeSpeed={30}
+            backSpeed={45}
+            loop={true}
+          />
+        </TypedText>
+        <Marginer direction="vertical" margin="2em" />
+        <Marginer direction="vertical" margin="10em" />
+        <DownArrow />
+      </LandingContainer>
+    </div>
   );
 }
 

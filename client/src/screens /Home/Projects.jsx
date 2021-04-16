@@ -9,12 +9,13 @@ import Project3Img from "../../assets/pets-r-us home.png";
 import Project4Img from "../../assets/united-motors home.png";
 
 const ProjectsContainer = styled(Element)`
-  height: 1000px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #c9ada7;
+  padding: 100px 0;
 `;
 
 const ProjectsHeader = styled.h1`
@@ -48,16 +49,22 @@ export function ProjectsSection(props) {
             projectImg={Project2Img}
             projectTitle="Best Of Bangtan"
             projectDescription=" Best-of-Bangtan is a front-end only application featuring Airtable and React build where the users will be able to get and post information as well as reviews about their new favorite BTS songs. This app was built with full CRUD and utilizes a custom Airtable RESTful API."
+            webLink="https://best-of-bangtan.netlify.app/"
+            gitLink="https://github.com/snqureshi/best-of-bangtan"
           />
           <ProjectCard
             projectImg={Project3Img}
             projectTitle="Pets-R-Us"
             projectDescription=" Pets-R-Us was a team project where we built a full (Mongo/Express/React/Node) MERN stack application that allows local animal adoption agencies to post their adorable animals. The application has full CRUD and user association on the back, and utilizes the React framework on the front end."
+            webLink="https://pets-r-us.netlify.app/"
+            gitLink="https://github.com/jessicamyee/pets-r-us"
           />
           <ProjectCard
             projectImg={Project4Img}
             projectTitle="United Motors Car Dealership"
             projectDescription="United Motors is a full stack app designed to be utilized by a local car dealership. It was built with React, Ruby on Rails, and RESTful API built by me. The app features user authentication and full CRUD."
+            webLink="https://unitedmotors.netlify.app/"
+            gitLink="https://github.com/snqureshi/united-motors"
           />
         </CardsContainer>
       </ProjectsContainer>

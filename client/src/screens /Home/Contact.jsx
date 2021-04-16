@@ -106,7 +106,7 @@ export function ContactSection() {
         <StyledForm onSubmit={handleSubmit}>
           <StyledHeading>
             <h3>
-              Email me |
+              Email Me ||
               <StyledEmail href="mailto:shammaqureshi25@gmail.com">
                 shammaqureshi25@gmail.com
               </StyledEmail>
