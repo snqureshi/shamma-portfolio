@@ -1,8 +1,10 @@
 import React from "react";
 import Typed from "react-typed";
 import styled from "styled-components";
+import { Element, scroller } from "react-scroll";
 import Logo from "../../components/Logo";
 import { Marginer } from "../../components/Marginer";
+import { DownArrow } from "../../components/DownArrow";
 
 const LandingContainer = styled.div`
   width: 100%;
@@ -34,7 +36,18 @@ const TypedText = styled.div`
   text-align: center;
 `;
 
+const DownArrowContainer = styled.div`
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+`;
+
 function Landing(props) {
+  const scrollToNextSection = () => {
+    scroller.scrollTo("AboutSection", { smooth: true, duration: 1500 });
+  };
+
   return (
     <div id="landing" className="projects-container">
       <LandingContainer>
@@ -62,6 +75,9 @@ function Landing(props) {
           />
         </TypedText>
         <Marginer direction="vertical" margin="10em" />
+        <DownArrowContainer onClick={scrollToNextSection}>
+          <DownArrow />
+        </DownArrowContainer>
       </LandingContainer>
     </div>
   );
