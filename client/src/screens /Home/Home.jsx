@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Landing from "./Landing";
 import { AboutSection } from "./About";
 import { ProjectsSection } from "./Projects";
+import { ContactSection } from "./Contact";
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -17,6 +18,7 @@ function Home(props) {
       <Landing />
       <AboutSection />
       <ProjectsSection />
+      <ContactSection />
     </HomeContainer>
   );
 }

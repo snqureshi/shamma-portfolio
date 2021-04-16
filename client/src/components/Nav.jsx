@@ -45,7 +45,14 @@ export function Navbar(props) {
         <Marginer direction="horizontal" margin="8px" />
         <LinkButton small>Developer Projects</LinkButton>
         <Marginer direction="horizontal" margin="8px" />
-        <LinkButton small>Resume</LinkButton>
+        <LinkButton small>
+          <a
+            href="https://drive.google.com/file/d/1zrxBshPMookGk0ZGZYxEJwKi4kk3y4vD/view?usp=sharing"
+            target="_blank"
+          >
+            Resume
+          </a>
+        </LinkButton>
         <Marginer direction="horizontal" margin="8px" />
         <Button small>Contact Me</Button>
       </AccessibilityContainer>
